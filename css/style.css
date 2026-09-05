@@ -760,6 +760,10 @@ h3 { font-size: 1.15rem; font-weight: 700; }
   background: linear-gradient(100deg, rgba(11, 29, 58, 0.9) 0%, rgba(11, 29, 58, 0.7) 45%, rgba(11, 29, 58, 0.25) 100%);
 }
 
+.dienst-banner-overlay--vervaagd {
+  background: linear-gradient(100deg, rgba(11, 29, 58, 0.94) 0%, rgba(11, 29, 58, 0.78) 40%, rgba(11, 29, 58, 0.6) 70%, rgba(11, 29, 58, 0.68) 100%);
+}
+
 .dienst-banner-tekst .kicker { color: var(--accent); }
 
 .dienst-banner-tekst h1 {
