@@ -487,6 +487,29 @@ h3 { font-size: 1.15rem; font-weight: 700; }
 
 .site-footer a:hover { color: #fff; }
 
+.social-row {
+  list-style: none;
+  display: flex;
+  gap: 0.7rem;
+}
+
+.social-row a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.8);
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.social-row a:hover {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
 /* ---------- variant-schakelaar (tijdelijk) ---------- */
 
 .variant-switch {
@@ -505,6 +528,57 @@ h3 { font-size: 1.15rem; font-weight: 700; }
   padding: 0.55em 1.2em;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
 }
+
+/* ---------- juridische pagina (voorwaarden) ---------- */
+
+.container-smal {
+  width: min(760px, 92%);
+}
+
+.voorwaarden-pagina { padding-block: 3.5rem 5rem; }
+
+.voorwaarden-titel {
+  text-transform: none;
+  margin-bottom: 0.6rem;
+}
+
+.voorwaarden-intro {
+  color: var(--grijs);
+  max-width: 60ch;
+  margin-bottom: 2.4rem;
+}
+
+.voorwaarden-tekst h2 {
+  font-size: 1.05rem;
+  text-transform: none;
+  margin-top: 2rem;
+  margin-bottom: 0.6rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--lijn);
+}
+
+.voorwaarden-tekst h2:first-child { margin-top: 0; padding-top: 0; border-top: none; }
+
+.voorwaarden-tekst p,
+.voorwaarden-tekst li {
+  color: var(--inkt);
+  font-size: 0.96rem;
+}
+
+.voorwaarden-tekst ul {
+  padding-left: 1.3rem;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.voorwaarden-terug {
+  margin-top: 2.6rem;
+  font-weight: 600;
+}
+
+.voorwaarden-terug a { color: var(--blauw); text-decoration: none; }
+
+.voorwaarden-terug a:hover { text-decoration: underline; }
 
 /* ---------- responsive ---------- */
 
