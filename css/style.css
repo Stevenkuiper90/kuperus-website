@@ -535,7 +535,18 @@ h3 { font-size: 1.15rem; font-weight: 700; }
   align-items: center;
 }
 
-.over-foto img { border-radius: 8px; }
+.over-foto-blok {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.9rem;
+}
+
+.over-foto-blok img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+}
 
 .kernwaarden {
   list-style: none;
