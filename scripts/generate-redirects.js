@@ -1,4 +1,4 @@
-// Genereert statische redirect-stubs voor oude WordPress-URL's (meta-refresh + canonical,
+// Genereert statische redirect-stubs voor oude WordPress-URL's (meta-refresh + canonical, bewust zonder noindex,
 // want GitHub Pages ondersteunt geen server-side 301). Eenmalig gedraaid bij livegang.
 const fs = require('fs');
 const path = require('path');
@@ -16,7 +16,7 @@ const redirects = [
   ['home/geschiedenis', '#over-ons'],
   ['home/fotogalerij', '#werk'],
   ['disclaimer', 'voorwaarden.html'],
-  ['privacy-verklaring', 'voorwaarden.html'],
+  ['privacy-verklaring', 'privacyverklaring.html'],
   ['sitemap', ''],
   ['schade', 'schadeherstel.html'],
   ['schade/schadeherstel', 'schadeherstel.html'],
@@ -61,7 +61,6 @@ function pageFor(oldPath, newPath) {
   <title>Autospuitbedrijf Kuperus</title>
   <link rel="canonical" href="${target}">
   <meta http-equiv="refresh" content="0; url=${target}">
-  <meta name="robots" content="noindex, follow">
 </head>
 <body>
   <p>Deze pagina is verplaatst. Ga naar <a href="${target}">${target}</a>.</p>
